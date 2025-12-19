@@ -1,0 +1,104 @@
+:root {
+  --primary: #2563eb; /* Microsoft / Amazon blue */
+  --secondary: #0f9d58; /* Google green */
+  --accent: #fbbc05; /* Google yellow */
+  --bg: #0b1120;
+  --card: #020617;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, var(--bg));
+  color: var(--text);
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 0.75rem;
+  font-size: 1.15rem;
+  opacity: 0.95;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #bfdbfe;
+  border-left: 5px solid var(--accent);
+  padding-left: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: linear-gradient(180deg, #020617, #020617cc);
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #e0f2fe;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #93c5fd;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #020617;
+  color: var(--muted);
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
